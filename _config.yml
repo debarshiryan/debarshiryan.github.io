@@ -1,3 +1,7 @@
+*    @global_owner1 @global_owner2
+
+theme: jekyll-theme-architect
+
 # Where things are
 source              : .
 destination         : ./_site
