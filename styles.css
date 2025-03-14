@@ -135,15 +135,22 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Contact Section */
-#contact a {
-    color: #2575fc;
-    text-decoration: none;
-    font-size: 20px;
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.social-icons a {
+    color: #555; /* Gray icons */
+    font-size: 40px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: black; /* Turns black on hover */
 }
 
 /* Footer */
