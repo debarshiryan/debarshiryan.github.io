@@ -1,12 +1,10 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
+/* Use Times New Roman */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
     scroll-behavior: smooth;
 }
 
@@ -15,12 +13,13 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: white;
+    background: #1e1e1e;
     padding: 15px 0;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
+/* Navigation Links */
 nav ul {
     list-style: none;
     padding: 0;
@@ -32,29 +31,71 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
 
+/* Hero Section */
+#hero {
+    background: url('trilobite.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Buttons */
 .btn {
-    background: #2575fc;
+    background: #333;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
+    border: none;
 }
 
-#hero {
-    background: url('human_evolution.jpg') no-repeat center center/cover;
-    height: 100vh;
+.btn:hover {
+    background: #444;
+}
+
+/* Projects Section */
+.project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    gap: 20px;
 }
 
-/* More styling can be added here */
+.project-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+#contact a {
+    color: #84aaff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #bbb;
+    margin-top: 30px;
+}
